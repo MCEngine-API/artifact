@@ -78,7 +78,7 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             artifact tasks.named('shadowJar').get()
-            artifactId = 'artifact-api'
+            artifactId = "${project.repository_name}-api"
 
             pom {
                 name.set(jarName)
